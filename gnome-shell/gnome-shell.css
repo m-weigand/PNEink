@@ -389,3 +389,23 @@ QUICKSETTINGS
   /*color: #ffffff; */
   background-color: black;
 }
+
+.overview-tile {
+  color: #000000;
+}
+
+.app-folder {
+  border: 2px solid #000000;
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+.app-folder-dialog {
+  border: 2px solid #000000;
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+.app-folder-dialog .folder-name-container {
+  color: #000000;
+}

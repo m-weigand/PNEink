@@ -1,0 +1,20 @@
+// App icons
+.overview-tile {
+  color: $dark;
+}
+
+.app-folder {
+  border: $border-thick;
+  border-color: $dark;
+  background-color: $light;
+}
+
+.app-folder-dialog {
+  border: $border-thick;
+  border-color: $dark;
+  background-color: $light;
+
+  .folder-name-container {
+    color: $dark;
+  }
+}
