@@ -19,10 +19,13 @@ Clone to /usr/share/themes
 In general, make sure to first modify the source css (.scss) files, and then
 regenerate the corresponding .css file, e.g.:
 
-	cd gnome-shell
-	sassc \
-		--style expanded \
-		gnome-shell.scss gnome-shell.css
+```
+$ make all
+sassc -t expanded gtk-3.0/gtk.scss gtk-3.0/gtk.css
+sassc -t expanded gtk-3.0/gtk-dark.scss gtk-3.0/gtk-dark.css
+sassc -t expanded gnome-shell/gnome-shell.scss gnome-shell/gnome-shell.css
+```
+
 
 ### Looking Glass
 

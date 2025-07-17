@@ -1,6 +1,10 @@
 /*@import url("resource:///org/gtk/libgtk/theme/HighContrast/gtk-contained.css");*/
 @define-color text_view_bg #ffffff;
 @define-color theme_text_color #000000;
+@define-color theme_fg_color  #000000;
+@define-color theme_bg_color  #ffffff;
+@define-color theme_selected_fg_color #aaaaaa;
+@define-color theme_selected_bg_color #555555;
 window {
   background-color: #ffffff;
   color: #000000;
@@ -24,6 +28,7 @@ headerbar {
   border-radius: 8px 8px 0px 0px;
   padding: 5px;
 }
+
 headerbar separator {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -32,6 +37,7 @@ headerbar separator {
   background-color: #ffffff !important;
   color: #000000;
 }
+
 .titlebar * {
   color: #000000;
 }
@@ -45,10 +51,12 @@ headerbar separator {
   min-width: 18px;
   border-radius: 50%;
 }
+
 .titlebutton:hover {
   background-color: #000000;
   color: #ffffff;
 }
+
 .titlebutton:hover * {
   color: #ffffff;
 }
@@ -63,9 +71,11 @@ switch {
   border-radius: 14px;
   padding: 2px;
 }
+
 switch:hover {
   background-color: unset;
 }
+
 switch > slider {
   background-color: #000000;
   border: 2px solid #000000;
@@ -73,6 +83,7 @@ switch > slider {
   min-width: 18px;
   min-height: 18px;
 }
+
 switch * {
   color: rgba(0, 0, 0, 0);
 }
@@ -104,6 +115,7 @@ popover {
   border: 2px solid #000000;
   border-radius: 5px;
 }
+
 popover contents {
   background-color: #ffffff;
   border: 1px solid #000000;
@@ -149,9 +161,11 @@ button:hover * {
   background-color: #000000;
   color: #ffffff;
 }
+
 .suggested-action * {
   color: #ffffff;
 }
+
 .suggested-action:disabled {
   border: 2px solid #646464;
   background-color: #646464;
@@ -160,12 +174,15 @@ button:hover * {
 buttonbox button {
   border-radius: 0;
 }
+
 buttonbox button:first-child {
   border-radius: 5px 0px 0px 5px;
 }
+
 buttonbox button:last-child {
   border-radius: 0px 5px 5px 0px;
 }
+
 buttonbox button:checked {
   background-color: #000000;
   color: #ffffff;
@@ -226,7 +243,7 @@ scrollbar.vertical slider {
 }
 
 .gtkstyle-fallback {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   color: #000000;
 }
 
@@ -235,7 +252,7 @@ scrollbar.vertical slider {
 iconview text,
 textview text {
   color: #000000;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .view text selection {
@@ -276,18 +293,18 @@ row {
   border: 1px solid #ffffff;
 }
 
-row:hover {
+popover:hover, row:hover {
   background-color: #ffffff;
   color: #000000;
 }
 
-row:selected {
+treeview:selected, row:selected {
   border: 1px solid #000000;
   background-color: #000000;
   color: #ffffff;
 }
 
-row:selected * {
+treeview:selected *, row:selected * {
   color: #ffffff;
 }
 
@@ -303,6 +320,23 @@ levelbar .empty {
 
 checkbutton {
   border: none !important;
+}
+
+checkbutton check {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+spinbutton entry {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+frame {
+  border: 1px solid #777777;
 }
 
 .background {
@@ -345,6 +379,10 @@ checkbutton {
   border-radius: 5px;
 }
 
+menuitem {
+  margin: 5px;
+}
+
 /* app-specific css */
 .frame {
   border: 1px solid #000000;
@@ -368,5 +406,3 @@ viewswitcher button:checked {
 viewswitcher button:checked * {
   color: #ffffff;
 }
-
-/*# sourceMappingURL=gtk-dark.css.map */

@@ -29,7 +29,6 @@ color: #ffffff;
 }
 
 *{
-
   &::backdrop{
     background-color: unset;
     background-image: unset;
@@ -64,18 +63,18 @@ row{
   border: 1px solid #ffffff;
 }
 
-row:hover{
+popover:hover, row:hover{
   background-color: #ffffff;
   color: #000000;
 }
 
-row:selected{
+treeview:selected, row:selected{
   border: 1px solid #000000;
   background-color: #000000;
   color: #ffffff;
 }
 
-row:selected *{
+treeview:selected *, row:selected *{
   color: #ffffff;
 }
 
@@ -90,6 +89,23 @@ levelbar .empty{
 
 checkbutton{
   border: none !important;
+}
+
+checkbutton check {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+spinbutton entry {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+frame {
+  border: 1px solid #777777;
 }
 
 .background{
@@ -130,6 +146,10 @@ checkbutton{
   color: #000000;
   padding: 6px;
   border-radius: 5px;
+}
+
+menuitem {
+  margin: 5px;
 }
 
 /* app-specific css */
